@@ -90,7 +90,7 @@
         pod install 
         ```
 
-2. **Testing application on virtual simulator (OPTIONAL)**
+2. **Testing application on virtual simulator (OPTIONAL)** __(Please use an virtual simulator for debugging purpose)__
 
     - Step 1: Go to '/dnademo' folder inside cloned repository
     - Step 2: Run command below to open console log for your simulator
