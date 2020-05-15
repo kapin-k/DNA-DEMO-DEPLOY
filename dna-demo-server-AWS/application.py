@@ -4,6 +4,8 @@ from subprocess import *
 import sys
 import json
 
+host_name = '0.0.0.0'
+port_no = 5000
 
 application = app = Flask(__name__)
 api = Api(app)
@@ -41,4 +43,4 @@ def rev_proxy():
     return data_frm_server
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host = host_name, port = port_no)
