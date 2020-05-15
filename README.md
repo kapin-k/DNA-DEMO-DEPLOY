@@ -37,7 +37,7 @@
     npm --version
     ```
 
- ### BACK END (UPDATED)
+ ### BACK END
 -------------
 
 **The server is currently runnning on AWS instance**  _Contact developers for credentials_
