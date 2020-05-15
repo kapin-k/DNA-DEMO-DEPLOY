@@ -59,7 +59,7 @@ npm --version
 * Replace the existing domain name with the domain name of the desired server. (Dont include IP address or port number) Eg: <key>github.com</key>
 
 
-**The following steps are for deploying it on a local machine, if you choose to go ahead with AWS Deployment, please skip this section and move to BUILD and DEPLOYMENT section. Also, the IP address of the local host needs to be translated to a domain, without which the app won't connect to server** 
+**The following steps are for deploying it on a local machine, if you choose to go ahead with AWS Deployment, please skip this section and move to BUILD and DEPLOYMENT section. If you chose to deploy it on a local machine, please keep in mind that the IP address of the local host needs to be translated to a domain, without which the app won't connect to server** 
 
 1. **Setting up Smarten-Demo app server**
 
