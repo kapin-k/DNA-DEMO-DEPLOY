@@ -58,6 +58,50 @@ npm --version
 * iv) In Line 35, you may find the following - <key>smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com</key>
 * Replace the existing domain name with the domain name of the desired server. (Dont include IP address or port number) Eg: <key>github.com</key>
 
+
+**The following steps are for deploying it on a local machine, if you choose to go ahead with AWS Deployment, please skip this section and move to BUILD and DEPLOYMENT section. Also, the IP address of the local host needs to be translated to a domain, without which the app won't connect to server** 
+
+1. **Setting up Smarten-Demo app server**
+
+- `smarten-demo-srv.py` must be configured such that `EXEC` variable points to the location of `db-search`. It is recommeded that `db-search` resides in the same directory as the database files and `smarten-demo-srv.py` itself.
+
+- Navigate to '/DNA-DEMO-DEPLOY/dna-demo-server-AWS' and execute the following command:
+
+    ```bash
+        make
+    ```
+2. **Setting up proxy-server**
+
+- Installing Flask API, navigate to '/DNA-DEMO-DEPLOY/dna-demo-server-AWS', then execute this command:
+    
+    ```bash
+    pip3 install flask
+    pip3 install flask_restful
+    ```
+3. **Starting the proxy-server**
+
+- Navigate to '/DNA-DEMO-DEPLOY/dna-demo-server-AWS' and execute: 
+
+    ```bash
+    python3 application.py
+    ```
+The proxy-server is currently configured in such a way that when it is launched it takes the IP address of the host it is running on and accepts connections on port `5000` by default. It is adviced that you do not change any of the parameters for this. 
+In case you need to change the parameters, here are the following steps: 
+  open `application.py` file in directory '/DNA-DEMO-DEPLOY/dna-demo-server-AWS' : 
+    
+      For changing IP and port number : 
+        
+        Line No: 7 Change  `host_name = 'IP Address/domain name'`
+        Line No: 8 Change  `port_no = <Port no>`
+        
+        'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adive you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
+        <Port_No>    => Port number on which you which you want the proxy-server accepting the connections
+
+If you have made any changes to host name or port number, then: 
+* move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
+* Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
+* Change the URL to the URL of the desired Server along with the port number if you have deployed it on local machine. 
+
 **Happy Searching! The application will now be connceted to the desired server. :)**
 
 
