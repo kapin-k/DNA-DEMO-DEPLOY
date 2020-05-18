@@ -110,7 +110,7 @@ If you have made any changes to host name or port number, then:
 
 1. **To build complete 'dnademo' react native package**
 
-- Step 1: Clone this repository from GitHub. Link: [dna-demo-app repository](https://github.com/kapin-k/dna-demo-app)
+- Step 1: Clone this repository from GitHub. Link: [dna-demo-deploy repository](https://github.com/kapin-k/DNA-DEMO-DEPLOY)
 - Move to the desired directory in your file system and use this command
 
 ```bash
