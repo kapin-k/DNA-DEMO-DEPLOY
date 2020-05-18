@@ -114,7 +114,7 @@ If you have made any changes to host name or port number, then:
 - Move to the desired directory in your file system and use this command
 
 ```bash
-git clone https://github.com/kapin-k/dna-demo-app.git
+git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
 ```
 
 - Step 2: Move to folder 'dnademo' inside cloned repository and execute:
