@@ -100,7 +100,7 @@ In case you need to change the parameters, here are the following steps:
 If you have made any changes to host name or port number, then: 
 * move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
 * Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
-* Change the URL to the URL of the desired *Server along with the port number* if you have deployed it on local machine. 
+* Change the URL to the URL of the desired **Server along with the port number** if you have deployed it on local machine. 
 
 **Happy Searching! The application will now be connceted to the desired server. :)**
 
