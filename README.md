@@ -105,7 +105,7 @@ If you have made any changes to host name or port number, then:
 **Happy Searching! The application will now be connceted to the desired server. :)**
 
 
-### BUILD AND DEPLOYMENT
+### DEPLOYMENT
 -------------
 
 1. **To build complete 'dnademo' react native package**
@@ -184,15 +184,15 @@ react-native run-android
 3. **Deploying on a physical device**
 
 - Step 1: Move to '/dnademo/ios/' directory inside the cloned repository
-> Open 'dnademo.xcworkspace' using your Xcode
+    - Open 'dnademo.xcworkspace' using your Xcode
 - Step 2: Code Signing / Requesting your certificates
 - From your Xcode, go to the 'Xcode' menu and click on 'Preferences'
 - Navigate to the 'Accounts' tab
 - Click on the '+' button on the bottom left corner of the Accounts panel to add your Apple account
-> Fill in your Apple iOS account credentials
+    - Fill in your Apple iOS account credentials
 - Select the account you just added
-> Click on 'Manage Certificates' > 
-> Click the “+” icon below the certificates pane, and request a new iOS Development Certificate (Apple Development Certificate).
+    - Click on 'Manage Certificates' > 
+    - Click the “+” icon below the certificates pane, and request a new iOS Development Certificate (Apple Development Certificate).
 - Step 3: Now, connect your device to the computer
 - Step 4: Go back to your Xcode's main screen and select 'dnademo' from the project navigator in Xcode
 - Step 5: To the right of the project navigator pane, you will now see a list with title 'TARGETS' with 4 options, namely: dnademo, dnademoTests, dnademo-tvOS, dnademo-tvOSTests
@@ -205,8 +205,8 @@ react-native run-android
 - Go to 'Signing' section and change 'Code Signing Identity' to iOS Developer.
 - Step 8: Now, select 'dnademoTests' from the 'Targets' section > Repeat the signing process as done in Step 6
 - Step 8: Choose your connected device
-> Go to'Product' menu on Xcode
-> Destination > *select your connected device*
+    - Go to'Product' menu on Xcode
+    - Destination > *select your connected device*
 - Step 9: Build application by clicking on the 'Play' button on the top left corner of the Xcode screen.
 > *If your device prompts you with whether you trust the computer -> Click on 'Trust' {This process might take a while. Wait patiently}*
 - Step 10: In your iPad, when prompted with an alert/error saying "Could not launch dnademo" or "Untrusted Developer", follow these steps:
