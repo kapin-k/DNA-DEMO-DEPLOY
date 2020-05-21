@@ -55,13 +55,13 @@ npm --version
 git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
 ```
 
-2. After cloning this project, move to directory '/dnademo/Components' and do the following:
+2. **After cloning this project, move to directory '/dnademo/Components' and do the following:**
 
 * Open 'DrawingBoard.js' file
 * Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
 * Change the URL to the URL of the desired Server
 
-3. Navigate to directory '/dnademo/ios' and perform the following steps:
+3. **Navigate to directory '/dnademo/ios' and perform the following steps:**
 
 * Step 1: Open 'dnademo.xcworkspace' using your Xcode
 * Step 2: In the project navigator, expand the 'dnademo' project. You will now see a list of folders. Expand the folder 'dnademo', within which you will find a file called Info.plist.
@@ -103,19 +103,19 @@ git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
     ```bash
     python3 application.py
     ```
-The proxy-server is currently configured in such a way that when it is launched it takes the IP address of the host it is running on and accepts connections on port `5000` by default. It is adviced that you do not change any of the parameters for this. 
+The proxy-server is currently configured in such a way that when it is launched it takes the IP address of the host it is running on and accepts connections on port '5000' by default. It is adviced that you do not change any of the parameters for this. 
 
 - In case you need to change the parameters, here are the following steps: 
 
-    * Open `application.py` file in directory '/DNA-DEMO-DEPLOY/dna-demo-server-AWS' : 
+    * Open 'application.py' file in directory '/DNA-DEMO-DEPLOY/dna-demo-server-AWS' : 
     
         For changing IP and port number : 
         
-            Line No: 7 Change  `host_name = 'IP Address/domain name'`
-            Line No: 8 Change  `port_no = <Port no>`
+        Line No: 7 Change  host_name = 'IP Address/domain name'
+        Line No: 8 Change  port_no = <Port no>
             
-            'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adive you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
-            <Port_No>    => Port number on which you which you want the proxy-server accepting the connections
+        'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adive you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
+        <Port_No>    => Port number on which you which you want the proxy-server accepting the connections
 
 If you have made any changes to host name or port number, then: 
     * move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
@@ -145,7 +145,6 @@ If you have made any changes to host name or port number, then:
     ```
 
 - Step 2: Move to folder 'dnademo' inside cloned repository and execute:
-
     - Execute command below to install all the dependencies needed for building the react native application
 
         ```bash
@@ -153,9 +152,7 @@ If you have made any changes to host name or port number, then:
         npm build
         ```
 
-- Step 3: Packaging the application
-**This step has to be repeated everytime changes are made to any files in the repository**
-
+- Step 3: Packaging the application **(This step has to be repeated everytime changes are made to any files in the repository)**
     - Execute command below package the application into a ios bundle for deploying on device: (Any changes made to source code are reflected on the device only after this command)
 
     ```bash
@@ -174,55 +171,55 @@ If you have made any changes to host name or port number, then:
 - Step 1: Go to '/dnademo' folder inside cloned repository
 - Step 2: Run command below to open console log for your simulator
 
-- IOS:
+    - IOS:
 
-```bash
-npm start
-```
+    ```bash
+    npm start
+    ```
 
-OR
+    OR
 
-```bash
-npx react-native run-ios
-```
+    ```bash
+    npx react-native run-ios
+    ```
 
-* To specify target device simulator
+    * To specify target device simulator
 
-> Go to 'Xcode' menu > Select 'Preferences' > 'Location' section > Add your Xcode version to the 'Command Line Tools'. Continue executing commands below in the terminal.
+    > Go to 'Xcode' menu > Select 'Preferences' > 'Location' section > Add your Xcode version to the 'Command Line Tools'. Continue executing commands below in the terminal.
 
-List all available simulator:
+    List all available simulator:
 
-```bash
-xcrun simctl list devices
-```
+    ```bash
+    xcrun simctl list devices
+    ```
 
-Select a device from list:
+    Select a device from list:
 
-```bash
-npm react-native run-ios --simulator="iPad Pro (12.9-inch) (3rd generation)"
-```
+    ```bash
+    npm react-native run-ios --simulator="iPad Pro (12.9-inch) (3rd generation)"
+    ```
 
-- ANDROID: (Needs Android Studio with JDK path set to respective environment variable)
+    - ANDROID: (Needs Android Studio with JDK path set to respective environment variable)
 
-```bash
-react-native run-android
-```
-*You will now see a Metro Bundler console and a simulator ruuning. Wait for it to load completely. Once it is done loading, close the simulator.*
+    ```bash
+    react-native run-android
+    ```
+    *You will now see a Metro Bundler console and a simulator ruuning. Wait for it to load completely. Once it is done loading, close the simulator.*
 
-- Step 3: Go to the 'ios' folder
-- Step 4: Open 'dnademo.xcworkspace' using your Xcode
-- Step 5: Click on the run button on the top-left corner of the screen
+    - Step 3: Go to the 'ios' folder
+    - Step 4: Open 'dnademo.xcworkspace' using your Xcode
+    - Step 5: Click on the run button on the top-left corner of the screen
 
--> Choose target simulator by clicking on available devices dropdown option near your project name. (next to the run button)
-(or) Xcode Menu -- Product -- Destination -- *choose from available device*
+    -> Choose target simulator by clicking on available devices dropdown option near your project name. (next to the run button)
+    (or) Xcode Menu -- Product -- Destination -- *choose from available device*
 
 3. **Deploying on a physical device**
 
 - Step 1: Move to '/dnademo/ios/' directory inside the cloned repository
     - Open 'dnademo.xcworkspace' using your Xcode
 - Step 2: Code Signing / Requesting your certificates
-- From your Xcode, go to the 'Xcode' menu and click on 'Preferences'
-- Navigate to the 'Accounts' tab
+    - From your Xcode, go to the 'Xcode' menu and click on 'Preferences'
+    - Navigate to the 'Accounts' tab
 - Click on the '+' button on the bottom left corner of the Accounts panel to add your Apple account
     - Fill in your Apple iOS account credentials
 - Select the account you just added
