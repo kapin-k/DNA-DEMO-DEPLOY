@@ -40,7 +40,7 @@ npm --version
 ### BACK END
 -------------
 
-**The server is currently runnning on AWS instance**  _Contact developers for credentials_
+**The server is currently runnning on an AWS instance. SKIP THIS SECTION IF YOU DON'T WANT TO CHANGE THE SERVER FROM AWS**  _Contact developers for credentials_
 
 **Follow the below steps to make the application run on custom server:**
 
