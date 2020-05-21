@@ -67,7 +67,7 @@ git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
 * Step 2: In the project navigator, expand the 'dnademo' project. You will now see a list of folders. Expand the folder 'dnademo', within which you will find a file called Info.plist.
 * Step 3: Right click on 'Info.plist' --> 'Open As' --> 'Source Code'.
 * Step 4: In Line 35, you may find the following - <key>smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com</key>
-* Step 5: Replace the existing domain name with the domain name of the desired server. (Dont include IP address or port number) Eg: <key>github.com</key>
+* Step 5: Replace the existing domain name with the domain name of the desired server. Eg: <key>github.com</key> or <key>http://192.168.1.152:5000</key> if using the IP address and port number. 
 
 4. **Re-building the application package**
 
@@ -77,7 +77,7 @@ git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
     react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
     ```
 
-**The following steps are for deploying it on a local machine, if you choose to go ahead with AWS Deployment, please skip this section and move to DEPLOYMENT section. If you chose to deploy it on a local machine, please keep in mind that the IP address of the local host needs to be translated to a domain, without which the app won't connect to server**
+**The following steps are for deploying it on a local machine, if you choose to go ahead with AWS Deployment, please skip this section and move to DEPLOYMENT section.**
 
 1. **Setting up Smarten-Demo app server**
 
@@ -103,7 +103,7 @@ git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
     ```bash
     python3 application.py
     ```
-The proxy-server is currently configured in such a way that when it is launched it takes the IP address of the host it is running on and accepts connections on port '5000' by default. It is adviced that you do not change any of the parameters for this. 
+**The proxy-server is currently configured in such a way that when it is launched it takes the IP address of the host it is running on and accepts connections on port '5000' by default. It is adviced that you do not change any of the parameters for this.**
 
 - In case you need to change the parameters, here are the following steps: 
 
@@ -114,13 +114,15 @@ The proxy-server is currently configured in such a way that when it is launched 
         Line No: 7 Change  host_name = 'IP Address/domain name'
         Line No: 8 Change  port_no = <Port no>
             
-        'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adive you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
+        'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adivce you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
         <Port_No>    => Port number on which you which you want the proxy-server accepting the connections
 
 - If you have made any changes to host name or port number, then: 
     * move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
     * Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
-    * Change the URL to the URL of the desired **Server along with the port number** if you have deployed it on local machine.
+    * Change the URL to the URL of the desired **Server along with the port number** if you have deployed it on local machine. Eg: 
+    - using IP address:  serv = 'http://192.168.1.152:5000'
+    - using Domain name: serv = 'http://mymac.ankush.home:5000'
 
 4. **Re-building the application package**
 - Execute command below package the application into a ios bundle for deploying on device: (Any changes made to source code are reflected on the device only after this command)
