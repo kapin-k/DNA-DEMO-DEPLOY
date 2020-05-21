@@ -117,7 +117,7 @@ The proxy-server is currently configured in such a way that when it is launched 
         'IP Address/domain name' => the IP address/domain name at which the server should accept incoming requests and connections. We adive you keep it as 0.0.0.0 or change it to the domain name if it needs to be changed. 
         <Port_No>    => Port number on which you which you want the proxy-server accepting the connections
 
-If you have made any changes to host name or port number, then: 
+- If you have made any changes to host name or port number, then: 
     * move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
     * Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
     * Change the URL to the URL of the desired **Server along with the port number** if you have deployed it on local machine.
@@ -171,7 +171,7 @@ If you have made any changes to host name or port number, then:
 - Step 1: Go to '/dnademo' folder inside cloned repository
 - Step 2: Run command below to open console log for your simulator
 
-    - IOS:
+    - **IOS:**
 
     ```bash
     npm start
@@ -199,7 +199,7 @@ If you have made any changes to host name or port number, then:
     npm react-native run-ios --simulator="iPad Pro (12.9-inch) (3rd generation)"
     ```
 
-    - ANDROID: (Needs Android Studio with JDK path set to respective environment variable)
+    - **ANDROID:** (Needs Android Studio with JDK path set to respective environment variable)
 
     ```bash
     react-native run-android
