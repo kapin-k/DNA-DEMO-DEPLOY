@@ -185,7 +185,7 @@ The proxy-server is currently configured in such a way that when it is launched 
 
     * To specify target device simulator
 
-    > Go to 'Xcode' menu > Select 'Preferences' > 'Location' section > Add your Xcode version to the 'Command Line Tools'. Continue executing commands below in the terminal.
+        * Go to 'Xcode' menu > Select 'Preferences' > 'Location' section > Add your Xcode version to the 'Command Line Tools'. Continue executing commands below in the terminal.
 
     List all available simulator:
 
