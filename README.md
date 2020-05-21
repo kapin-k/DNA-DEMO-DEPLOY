@@ -121,8 +121,8 @@ git clone https://github.com/kapin-k/DNA-DEMO-DEPLOY.git
     * move to directory '/DNA-DEMO-DEPLOY/dnademo/Components'
     * Go to Line 27: Where you may see an URL for the Server (http://smarten-env.eba-9hfjufww.us-east-2.elasticbeanstalk.com)
     * Change the URL to the URL of the desired **Server along with the port number** if you have deployed it on local machine. Eg: 
-    - using IP address:  serv = 'http://192.168.1.152:5000'
-    - using Domain name: serv = 'http://mymac.ankush.home:5000'
+        - using IP address:  serv = 'http://192.168.1.152:5000'
+        - using Domain name: serv = 'http://mymac.ankush.home:5000'
 
 4. **Re-building the application package**
 - Execute command below package the application into a ios bundle for deploying on device: (Any changes made to source code are reflected on the device only after this command)
