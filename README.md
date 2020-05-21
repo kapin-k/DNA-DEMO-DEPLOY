@@ -8,21 +8,21 @@
 ### PREREQUISITES
 -------------
 - Node
-- Installs Node.js and npm using Homebrew on macOS
+    - Installs Node.js and npm using Homebrew on macOS
 
 ```bash
 brew install node
 ```
 
 - Watchman
-- Watchman exists to watch files and record when they change. It can also trigger actions (such as rebuilding assets) when matching files change.
+    - Watchman exists to watch files and record when they change. It can also trigger actions (such as rebuilding assets) when matching files change.
 
 ```bash
 brew install watchman
 ```
 
 - Cocopods
-- CocoaPods is an application level dependency manager for the Objective-C/Swift, that provides a standard format for managing external libraries.
+    - CocoaPods is an application level dependency manager for the Objective-C/Swift, that provides a standard format for managing external libraries.
 
 ```bash
 sudo gem install cocoapods
