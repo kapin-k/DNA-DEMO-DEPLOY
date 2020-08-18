@@ -6,7 +6,7 @@
 ![App Icon](https://github.com/kapin-k/DNA-DEMO-DEPLOY/blob/master/AppIcons/appstore.png)
 
 **Screenshots**
-<img src=https://github.com/kapin-k/DNA-DEMO-DEPLOY/blob/master/dnademo/Components/Sample_Screens/Sample1.png" width="700" height="500" />
+<img src="https://github.com/kapin-k/DNA-DEMO-DEPLOY/blob/master/dnademo/Components/Sample_Screens/Sample1.png" width="700" height="500" />
 
 ## DOCUMENTATION
 
